@@ -66,13 +66,14 @@ p {
 }
 
 button {
-  border: none;
-  width: 146px;
-  height: 48px;
+  width: 144px;
+  height: 46px;
   font-family: var(--lexen);
   border-radius: var(--s-48);
   background-color: var(--very-light-gray);
+  border: solid 2px var(--very-light-gray);
 }
+
 .content {
   display: flex;
   width: 918px;
@@ -93,12 +94,26 @@ button {
   color: var(--bright-orange);
 }
 
+.sedans > button:hover {
+  color: var(--very-light-gray);
+  background-color: var(--bright-orange);
+}
+
 .suvs {
   background-color: var(--dark-cyan);
 }
 
 .suvs > button {
   color: var(--dark-cyan);
+}
+
+.suvs > button:hover {
+  color: var(--very-light-gray);
+  background-color: var(--dark-cyan);
+}
+
+.suvs > button:hover {
+  color: --very-light-gray;
 }
 
 .luxury {
@@ -109,6 +124,12 @@ button {
 .luxury > button {
   color: var(--very-dark-cyan);
 }
+
+.luxury > button:hover {
+  color: var(--very-light-gray);
+  background-color: var(--very-dark-cyan);
+}
+
 .attribution {
   display: flex;
   justify-content: center;
