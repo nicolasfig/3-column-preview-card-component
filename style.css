@@ -144,3 +144,26 @@ button {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (max-width: 900px) {
+  body {
+    margin-bottom: 0;
+  }
+
+  .attribution {
+    position: relative;
+  }
+
+  .content {
+    flex-direction: column;
+    width: 320px;
+  }
+
+  .sedans {
+    border-radius: var(--s-8) var(--s-8) 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 var(--s-8) var(--s-8);
+  }
+}
