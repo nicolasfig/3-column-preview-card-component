@@ -139,6 +139,12 @@ button {
   text-align: center;
   position: absolute;
   bottom: var(--s-16);
+  color: var(--dark-cyan);
+}
+
+.attribution > a {
+  text-decoration: none;
+  color: var(--very-dark-cyan);
 }
 
 .attribution a {
@@ -146,14 +152,6 @@ button {
 }
 
 @media screen and (max-width: 900px) {
-  body {
-    margin-bottom: 0;
-  }
-
-  .attribution {
-    position: relative;
-  }
-
   .content {
     flex-direction: column;
     width: 320px;
@@ -165,5 +163,8 @@ button {
 
   .luxury {
     border-radius: 0 0 var(--s-8) var(--s-8);
+  }
+  .attribution {
+    display: none;
   }
 }
