@@ -38,7 +38,7 @@
 
 main {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
   background-color: var(--very-light-gray);
@@ -48,7 +48,7 @@ img {
   margin-bottom: 40px;
 }
 
-h1 {
+h2 {
   color: var(--very-light-gray);
   font-family: var(--big-shoulders);
   font-weight: var(--w-bold);
@@ -77,7 +77,8 @@ button {
 .content {
   display: flex;
   width: 918px;
-  height: 500px;
+  min-height: 500px;
+  margin: 2rem;
   border-radius: var(--s-8);
 }
 .content > div {
@@ -165,6 +166,6 @@ button {
     border-radius: 0 0 var(--s-8) var(--s-8);
   }
   .attribution {
-    display: none;
+    position: inherit;
   }
 }
